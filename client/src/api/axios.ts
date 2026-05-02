@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+const API = axios.create({ baseURL: 'http://taskmanager-production-9f59.up.railway.app' });
 
 API.interceptors.request.use((req) => {
     const token = localStorage.getItem('token');
